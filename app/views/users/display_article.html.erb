@@ -1,0 +1,56 @@
+<h1>Author: <%= current_user.name %></h1>
+<h3>Articles that <%= current_user.name %> has authored:</h3>
+
+
+<%if @arr_objects.first==nil %>
+<p>Currently no atricle. Add <%= link_to 'Here', new_user_article_path(current_user)%></p>
+<%else%>
+<%= form_tag 'request_to_admin' %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Remarks</th>
+  </tr>
+  <% @arr_objects.each do |t| %>
+    <tr>
+      <td><%= link_to t.name, user_article_path(id: t.id, user_id: t.user_id) %></td>
+      <%if t.author_approval!=true %>
+      <td><%= check_box("request_to_admin", t.id) %></td>
+      <td><%= link_to 'Delete', user_article_path(id: t.id, user_id: t.user_id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <%else%>
+      <td> </td>
+      <% end %>
+    </tr>
+  <% end %>
+</table>
+<%= submit_tag 'Send to admin approval' %>
+<%end%>
+<p><%= link_to 'Back', user_path(current_user) %></p>
+
+
+<h3>List all the articles got published</h3>
+
+<% if @articles_published.first==nil%>
+<p>No article been purchased yet!!!</p>
+<%else%>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Publisher</th>
+  </tr>
+  <% @articles_published.each do |t| %>
+    <%if t.article.user==current_user%>
+    <tr>
+      <td><%= link_to t.article.name, user_article_path(id: t.article_id, user_id: t.article.user_id) %></td>
+      <td><%= t.publisher.name%></td>
+    </tr>
+  <% end %>  
+  <% end %>
+</table>
+<%end%>
+
+
+
+
+<p><%= link_to 'Sign out', destroy_user_session_path, method: :delete%><p>

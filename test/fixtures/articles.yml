@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  name: MyString
+  content: MyString
+  author_approval: false
+  admin_approval: false
+  publisher_req: false
+  buy_approval: false
+
+two:
+  user_id: 
+  name: MyString
+  content: MyString
+  author_approval: false
+  admin_approval: false
+  publisher_req: false
+  buy_approval: false

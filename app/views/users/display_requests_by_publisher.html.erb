@@ -1,0 +1,35 @@
+<h1>Admin: <%= current_user.name %></h1>
+<h3>Select Articles to approve to sell to publisher</h3>
+
+<%= form_tag 'selected_to_sell' %>
+<%if @article_from_publisher.first==nil%>
+No requests from publisher for buying
+<%else%>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Publisher</th>
+    <th>Remarks</th>
+  </tr>
+
+  <% @article_from_publisher.each do |t| %>
+    <tr>
+        <td><%= link_to t.article.name, user_article_path(id: t.article.id, user_id: t.article.user_id ) %></td>
+        <td><%= t.article.user.name %></td>
+        <td><%= t.publisher.name %></td>
+      <%if t.buy_approval!=true%>
+      <td><%= check_box('selected_to_sell', t.id) %></td>
+      <%else%>
+      <td>Approved for sell </td>
+      <% end %>
+    </tr>
+  <% end %>
+</table>
+<%= submit_tag 'Approved to be sold to publisher' %>
+<%end%>
+
+<p><%= link_to 'Back', user_path(current_user) %></p>
+
+
+<p><%= link_to 'Sign out', destroy_user_session_path, method: :delete%><p>

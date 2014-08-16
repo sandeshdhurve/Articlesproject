@@ -1,0 +1,41 @@
+ 
+<p>
+  <strong>Name:</strong>
+  <%= current_user.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= current_user.email %>
+</p>
+
+<% if current_user.role=='Admin'%>
+	<%= render 'admin' %>
+
+<% elsif current_user.role=='Author'%>
+  <%= render 'author' %>
+
+<% elsif current_user.role=='Publisher'%>
+  <%= render 'publisher' %>
+
+<%end%>
+<%= link_to 'Back', users_path %>
+<p><%= link_to 'Sign out', destroy_user_session_path, method: :delete%><p>
+
+<%= form_tag user_path, method: :get, enforce_utf8: false do %>
+<p>
+ <%= text_field_tag :search, params[:search] %>
+ <%= submit_tag "search", name: nil %>
+</p>
+<% end %>
+<%if @article %>
+<table>
+  <tr>
+  </tr>
+  <% @article.each do |t| %>
+    <tr>
+      <td><%= link_to t.name, user_article_path(id: t.id, user_id: t.user_id) %></td>
+    </tr>
+  <% end %>
+</table>
+<%end%>

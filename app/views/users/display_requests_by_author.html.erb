@@ -1,0 +1,32 @@
+<h1>Admin: <%= current_user.name %></h1>
+<h3>Select Articles to approve for publishing</h3>
+<%= form_tag 'selected_for_publishing' %>
+
+  <%if @article.first==nil%>
+    No requests
+  <%else%>
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Remarks</th>
+      </tr>
+
+      <% @article.each do |t| %>
+        <tr>
+          <td><%= link_to t.name, user_article_path(id: t.id, user_id: t.user_id) %></td>
+          <td><%= t.user.name %></td>
+          <%if t.admin_approval!=true%>
+          <td><%= check_box('selected_for_publishing', t.id) %></td>
+          <%else%>
+          <td>Approved for publish</td>
+        </tr>
+      <% end %>    
+    <% end %>
+  </table>
+  <%= submit_tag 'Approved to be published' %>
+<%end%>
+
+<p><%= link_to 'Back', user_path(current_user) %></p>
+  
+<p><%= link_to 'Sign out', destroy_user_session_path, method: :delete%><p>

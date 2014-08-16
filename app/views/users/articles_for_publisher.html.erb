@@ -1,0 +1,52 @@
+<h1>Publisher: <%= current_user.name %></h1>
+<h2>All The published Articles:</h2>
+
+<%if @all_published.first == nil %>
+  <p>Currently no article to published</p>
+<%else%>
+  <%= render 'table_front'%>
+    <% @all_published.each do |t| %>
+        <tr>
+          <td><%= link_to t.name, user_article_path(id: t.id, user_id: t.user_id) %></td>
+          <td><%= t.user.name %></td>
+        </tr>
+    <%- end %>
+  </table>
+<%end%>
+<p><%= link_to 'Back', user_path(current_user) %></p>
+
+<h3>Select Articles for Admin approval to buy</h3>
+
+<%if @article_for_publisher.first==nil %>
+  <p>Currently no article available for purchase</p>
+<%else%>
+  <%= form_tag 'request_to_admin_to_buy' %>
+    <%= render 'table_front'%>
+      <% @article_for_publisher.each do |t| %>
+        <tr>
+          <td><%= link_to t.name, user_article_path(id: t.id, user_id: t.user_id) %></td>
+          <td><%= t.user.name %></td>
+          <td><%= check_box("request_to_admin_to_buy", t.id) %></td>
+        </tr>
+      <%- end %>
+    </table>
+  <%= submit_tag 'Send to admin approval to buy' %>
+<%end%>
+<p><%= link_to 'Back', user_path(current_user) %></p>
+
+<h2><p>Articles purchased<p></h2>
+<%if @articles_purchased.first == nil %>
+  <p>No atricle purchased yet</p>
+<%else%>
+  <%= render 'table_front'%>
+    <% @articles_purchased.each do |t| %>
+      <tr>
+        <td><%= link_to t.article.name, user_article_path(id: t.article.id, user_id: t.article.user_id) %></td>
+        <td><%= t.article.user.name%></td>
+      </tr>
+    <% end %>
+  </table>
+<%end%>
+<%= link_to 'Back', user_path(current_user) %>
+
+<p><%= link_to 'Sign out', destroy_user_session_path, method: :delete%><p>

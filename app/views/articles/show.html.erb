@@ -1,0 +1,60 @@
+<p>
+  <strong>Author:</strong>
+  <%= @article.user.name %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @article.name %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @article.content %>
+</p>
+
+<%if @list_of_requested.first!=nil%>
+  List of publishers whose request is pending for "<%= @article.name %>": 
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+  <p><% @list_of_requested.each do |publisher| %></p>
+    <tr>
+     <p><td><%= publisher.name%></td> 
+     <td><%= publisher.email%></td></p>
+    </tr>
+     <p><%end %></p>
+</table>
+<p><% end %></p>
+
+
+
+<%if @list_of_publisher.first!= nil%>
+  List of publishers who purchased "<%= @article.name %>" : 
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+    <p><% @list_of_publisher.each do |publisher| %></p>
+    <tr>
+     <p><td><%= publisher.name%></td> 
+     <td><%= publisher.email%></td></p>
+    </tr>
+     <p><%end %></p>
+  </table>
+<% end %>
+
+
+<%if current_user.role == "Author"%>
+  <%= link_to 'Back', display_user_article_path(current_user) %>
+
+<%elsif current_user.role == "Admin"%>
+  <%= link_to 'Back', user_path(current_user) %>
+
+<%elsif current_user.role == "Publisher"%>
+  <%= link_to 'Back', display_available_for_publisher_path(current_user) %>
+<%end%>
