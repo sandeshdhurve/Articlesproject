@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+  class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   # GET /users
@@ -49,7 +49,6 @@ class UsersController < ApplicationController
     @user.destroy
     respond_to do |format|
       format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
-      format.json { head :no_content }
     end
   end
 
@@ -88,8 +87,6 @@ class UsersController < ApplicationController
     else
       @article_for_publisher=Article.get_articles_to_be_published
     end
-    
-   
     @articles_purchased= ArticlesPublisher.get_where_publisher_and_buy_approval(current_user.id)
   end  
   

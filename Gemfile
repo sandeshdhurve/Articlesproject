@@ -40,4 +40,7 @@ gem 'spring',        group: :development
 gem 'devise'
 gem 'mysql2'
 gem 'debugger'
-
+gem 'rspec-rails', '~> 3.0.0'
+gem 'factory_girl_rails'
+gem 'faker', '~> 1.4.2'
+gem 'shoulda-matchers', '~> 2.6.2'

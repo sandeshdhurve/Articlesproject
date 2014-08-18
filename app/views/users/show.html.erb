@@ -25,7 +25,7 @@
 <%= form_tag user_path, method: :get, enforce_utf8: false do %>
 <p>
  <%= text_field_tag :search, params[:search] %>
- <%= submit_tag "search", name: nil %>
+ <%= submit_tag "search", name: nil %>  
 </p>
 <% end %>
 <%if @article %>
