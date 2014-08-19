@@ -5,6 +5,9 @@ class ArticlesPublisher < ActiveRecord::Base
 	validates :publisher, :article, presence: true
 	validates :buy_request, null: false
 	validates :buy_approval, null: false 
+  scope :buy_approval_true, ->{where(buy_approval: true)}
+  scope :buy_approval_false, ->{where(buy_approval: false)}
+  scope :publisher, ->(user){where(publisher: user)}
 
 	private
 
@@ -12,23 +15,23 @@ class ArticlesPublisher < ActiveRecord::Base
   	find(article).update_attribute('buy_approval', true)
 	end
 
-	def self.get_list_of_published_articles(user_id)
-    where(buy_approval: true )
+	def self.get_list_of_published_articles
+    buy_approval_true
   end
 
 	def self.get_buy_approval
-    where(buy_approval: false)
+    buy_approval_false
 	end  
 
   def self.get_if_exist(user)
-    where(publisher: user).first!=nil
+    publisher(user).first!=nil
   end
 
   def self.get_all_where_publisher(user)
-    where(publisher: user)
+   publisher(user)
   end
 
   def self.get_where_publisher_and_buy_approval(user)
-    where(publisher_id: user, buy_approval: true)
+    publisher(user).buy_approval_true
   end 
 end

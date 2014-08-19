@@ -6,12 +6,14 @@ class Article < ActiveRecord::Base
   validates :author_approval,  default: false
   validates :admin_approval,  default: false 
   validates_associated :user
-
+  scope :user, ->(user_id){where(user_id: user_id)}
+  scope :author_approval, ->{where(author_approval: true)}
+  scope :admin_approval, ->{where(admin_approval: true)}
 
   private
 
   def self.get_article_object_array(user_id)
-    where(user_id: user_id.to_i)
+    user(user_id)
   end
 
   def self.initiate_for_admin_request(article_id)
@@ -19,7 +21,7 @@ class Article < ActiveRecord::Base
   end
 
   def self.get_requests_of_author
-  	where(author_approval: true)
+  	author_approval
   end
 
   def self.admin_approve_for_publishing(article_id)
@@ -27,7 +29,7 @@ class Article < ActiveRecord::Base
   end
 
   def self.get_articles_to_be_published
-    where(admin_approval: true)
+    admin_approval
   end
 
   def self.search(search)

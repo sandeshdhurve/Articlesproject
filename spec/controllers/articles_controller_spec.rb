@@ -28,9 +28,22 @@ RSpec.describe ArticlesController, :type => :controller do
     end
   end
 
-   describe "GET delete" do
-   	get :delete, {:id => article.id,:user_id=>article.user.id}
-   	
+  describe "GET create" do
+   	it "should create a valid instance" do
+      @article= FactoryGirl.create(:article)
+      expect(@article).to be_an_instance_of Article
+    end  
+
+    it "should render to user home" do
+      @article= FactoryGirl.create(:article)
+      debugger
+      expect(response).to redirect_to("/users/#{@article.user.id}")
+    end
+
+
+  end
+
+
 
 
 end

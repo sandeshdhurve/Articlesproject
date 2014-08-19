@@ -2,7 +2,6 @@ class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
   # GET /articles
-  # GET /articles.json
   def index
     @articles = Article.all
   end
@@ -16,7 +15,7 @@ class ArticlesController < ApplicationController
       if obj.buy_approval==true
         @list_of_publisher<< User.find(obj.publisher)
       else
-        @list_of_requested<< User.find(obj.publisher)
+        @list_of_requested<< User.find(obj.list_of_publisherlisher)
       end
     end
   end
@@ -39,33 +38,27 @@ class ArticlesController < ApplicationController
 
     if @article.save!
       redirect_to user_path(current_user) 
-      #render 'users/show'
     else
       render 'articles/new'
     end  
   end
 
   # PATCH/PUT /articles/1
-  # PATCH/PUT /articles/1.json
   def update
     respond_to do |format|
       if @article.update(article_params)
         format.html { redirect_to display_user_article_path(current_user), notice: 'Article was successfully updated.' }
-        format.json { render :show, status: :ok, location: @article }
       else
         format.html { render :edit }
-        format.json { render json: @article.errors, status: :unprocessable_entity }
       end
     end
   end
 
   # DELETE /articles/1
-  # DELETE /articles/1.json
   def destroy
     @article.destroy
     respond_to do |format|
       format.html { redirect_to display_user_article_path(current_user), notice: 'Article was successfully destroyed.' }
-      format.json { head :no_content }
     end
   end
 

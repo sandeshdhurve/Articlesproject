@@ -54,7 +54,7 @@
 
   def display_article
    @arr_objects=Article.get_article_object_array(params[:id])
-   @articles_published= ArticlesPublisher.get_list_of_published_articles(params[:id])
+   @articles_published= ArticlesPublisher.get_list_of_published_articles
   end 
 
   def display_requests_by_author

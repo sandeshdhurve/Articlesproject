@@ -73556,3 +73556,3850 @@ Processing by Devise::SessionsController#new as HTML
   Rendered devise/shared/_links.erb (0.6ms)
   Rendered devise/sessions/new.html.erb within layouts/application (6.4ms)
 Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-19 10:37:19 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (59.3ms)
+Completed 200 OK in 409ms (Views: 386.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 10:37:20 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 10:37:20 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 10:37:20 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 10:37:20 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 10:37:20 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 10:37:20 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 10:37:20 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 10:37:20 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 10:37:20 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 10:37:20 +0530
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-08-19 10:39:07 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 69ms (Views: 66.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-19 10:39:39 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 16ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-08-19 10:39:46 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ikg+PEeJgkm0/VR2OGsgMiZ6UqdKXdMviUPrhfBnqFQ=", "user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'admin@example.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 200ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-08-19 10:39:46 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_admin.html.erb (0.9ms)
+  Rendered users/show.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 127ms (Views: 66.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 10:39:47 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 10:39:47 +0530
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 10:39:47 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 10:39:47 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 10:39:47 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 10:39:47 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 10:39:47 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 10:39:47 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 10:39:47 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 10:39:47 +0530
+
+
+Started GET "/users/1/requested_by_author" for 127.0.0.1 at 2014-08-19 10:39:48 +0530
+Processing by UsersController#display_requests_by_author as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`author_approval` = 1  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`author_approval` = 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered users/display_requests_by_author.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 30ms (Views: 25.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/2/articles/5" for 127.0.0.1 at 2014-08-19 10:39:52 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"user_id"=>"2", "id"=>"5"}
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 5 LIMIT 1[0m  [["id", "5"]]
+  [1m[35mArticlesPublisher Load (0.3ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`article_id` = 5
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 56ms (Views: 48.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-08-19 10:40:00 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_admin.html.erb (1.4ms)
+  Rendered users/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 19ms (Views: 15.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-08-19 10:40:06 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"P1pRFarZWV2NzHkn67EaJUAgWUlAcCpgSEE4Vn5KHkY="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-19 10:40:07 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 10:40:07 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 10:40:07 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 10:40:07 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 10:40:07 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 10:40:07 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 10:40:07 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 10:40:07 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 10:40:07 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 10:40:07 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 10:40:07 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-19 10:40:08 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-08-19 10:40:17 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PV/w+SbkUfWQN6MX+Db/6POaq75V+XgSY6lKChJJrj0=", "user"=>{"email"=>"sandeshdhurve@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'sandeshdhurve@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 72ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-08-19 10:40:17 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_author.html.erb (0.9ms)
+  Rendered users/show.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 10:40:17 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 10:40:17 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 10:40:17 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 10:40:17 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 10:40:17 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 10:40:17 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 10:40:17 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 10:40:17 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 10:40:17 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 10:40:17 +0530
+
+
+Started GET "/users/2/all_articles" for 127.0.0.1 at 2014-08-19 10:40:19 +0530
+Processing by UsersController#display_article as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2[0m
+  [1m[35mArticlesPublisher Load (0.4ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.4ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  Rendered users/display_article.html.erb within layouts/application (35.3ms)
+Completed 200 OK in 65ms (Views: 60.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/users/2/articles/1" for 127.0.0.1 at 2014-08-19 10:40:22 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"user_id"=>"2", "id"=>"1"}
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 1 LIMIT 1  [["id", "1"]]
+  [1m[36mArticlesPublisher Load (0.4ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`article_id` = 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered articles/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 13ms (Views: 7.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/2/all_articles" for 127.0.0.1 at 2014-08-19 10:40:50 +0530
+Processing by UsersController#display_article as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2
+  [1m[36mArticlesPublisher Load (0.2ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  [1m[35mArticlesPublisher Load (0.1ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendered users/display_article.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/2/articles/2" for 127.0.0.1 at 2014-08-19 10:40:51 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"user_id"=>"2", "id"=>"2"}
+  [1m[35mArticle Load (0.5ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 2 LIMIT 1[0m  [["id", "2"]]
+  [1m[35mArticlesPublisher Load (0.3ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`article_id` = 2
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/2/all_articles" for 127.0.0.1 at 2014-08-19 10:41:15 +0530
+Processing by UsersController#display_article as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2[0m
+  [1m[35mArticlesPublisher Load (0.2ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.1ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  Rendered users/display_article.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/2/articles/3" for 127.0.0.1 at 2014-08-19 10:41:16 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"user_id"=>"2", "id"=>"3"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 3 LIMIT 1  [["id", "3"]]
+  [1m[36mArticlesPublisher Load (0.2ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`article_id` = 3[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered articles/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/2/all_articles" for 127.0.0.1 at 2014-08-19 10:41:29 +0530
+Processing by UsersController#display_article as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2
+  [1m[36mArticlesPublisher Load (0.2ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  [1m[35mArticlesPublisher Load (0.2ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendered users/display_article.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 27ms (Views: 23.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/2/articles/4" for 127.0.0.1 at 2014-08-19 10:41:31 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"user_id"=>"2", "id"=>"4"}
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 4 LIMIT 1[0m  [["id", "4"]]
+  [1m[35mArticlesPublisher Load (0.2ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`article_id` = 4
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/2/all_articles" for 127.0.0.1 at 2014-08-19 10:41:42 +0530
+Processing by UsersController#display_article as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2[0m
+  [1m[35mArticlesPublisher Load (0.2ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.1ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  Rendered users/display_article.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 27ms (Views: 24.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/2/articles/5" for 127.0.0.1 at 2014-08-19 10:41:46 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"user_id"=>"2", "id"=>"5"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 5 LIMIT 1  [["id", "5"]]
+  [1m[36mArticlesPublisher Load (0.2ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`article_id` = 5[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered articles/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 18ms (Views: 13.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/2/all_articles" for 127.0.0.1 at 2014-08-19 10:41:53 +0530
+Processing by UsersController#display_article as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.5ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2
+  [1m[36mArticlesPublisher Load (0.2ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  [1m[35mArticlesPublisher Load (0.2ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendered users/display_article.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/2/articles/6" for 127.0.0.1 at 2014-08-19 10:41:54 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"user_id"=>"2", "id"=>"6"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1[0m  [["id", "6"]]
+  [1m[35mArticlesPublisher Load (0.5ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`article_id` = 6
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 18ms (Views: 8.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/2/all_articles" for 127.0.0.1 at 2014-08-19 10:42:16 +0530
+Processing by UsersController#display_article as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2[0m
+  [1m[35mArticlesPublisher Load (0.2ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.1ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  Rendered users/display_article.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/2/articles/6" for 127.0.0.1 at 2014-08-19 10:42:35 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"user_id"=>"2", "id"=>"6"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1  [["id", "6"]]
+  [1m[36mArticlesPublisher Load (0.1ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`article_id` = 6[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered articles/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 17ms (Views: 12.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/2/all_articles" for 127.0.0.1 at 2014-08-19 10:42:37 +0530
+Processing by UsersController#display_article as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2
+  [1m[36mArticlesPublisher Load (0.3ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  [1m[35mArticlesPublisher Load (0.2ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendered users/display_article.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-08-19 10:53:39 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered users/_author.html.erb (1.5ms)
+  Rendered users/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-08-19 10:54:07 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered users/_author.html.erb (0.3ms)
+  Rendered users/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 10:54:07 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 10:54:07 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 10:54:07 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 10:54:07 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 10:54:07 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 10:54:07 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 10:54:07 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 10:54:07 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 10:54:07 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 10:54:07 +0530
+
+
+Started GET "/users/2?search=alb&commit=search" for 127.0.0.1 at 2014-08-19 10:54:21 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"search"=>"alb", "commit"=>"search", "id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered users/_author.html.erb (0.8ms)
+  [1m[35mArticle Load (0.4ms)[0m  SELECT `articles`.* FROM `articles`  WHERE (name LIKE '%alb%')
+  Rendered users/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 17ms (Views: 12.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 10:54:21 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 10:54:21 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 10:54:21 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 10:54:21 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 10:54:21 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 10:54:21 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 10:54:21 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 10:54:21 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 10:54:21 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 10:54:21 +0530
+
+
+Started GET "/users/2?search=alb&commit=search" for 127.0.0.1 at 2014-08-19 10:55:37 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"search"=>"alb", "commit"=>"search", "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_author.html.erb (0.3ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE (name LIKE '%alb%')[0m
+  Rendered users/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 10:55:37 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 10:55:37 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 10:55:37 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 10:55:37 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 10:55:37 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 10:55:37 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 10:55:37 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 10:55:37 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 10:55:37 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 10:55:37 +0530
+
+
+Started GET "/users/2?utf8=%E2%9C%93&search=alb&commit=search" for 127.0.0.1 at 2014-08-19 10:55:45 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"alb", "commit"=>"search", "id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered users/_author.html.erb (0.2ms)
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles`  WHERE (name LIKE '%alb%')
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 10:55:45 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 10:55:45 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 10:55:45 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 10:55:45 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 10:55:45 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 10:55:45 +0530
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 10:55:45 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 10:55:45 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 10:55:45 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 10:55:45 +0530
+
+
+Started GET "/users/2?utf8=%E2%9C%93&search=alb&commit=search" for 127.0.0.1 at 2014-08-19 10:57:35 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"alb", "commit"=>"search", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_author.html.erb (0.5ms)
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE (name LIKE '%alb%')[0m
+  Rendered users/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 10:57:35 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 10:57:35 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 10:57:35 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 10:57:35 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 10:57:35 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 10:57:35 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 10:57:35 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 10:57:35 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 10:57:35 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 10:57:35 +0530
+
+
+Started GET "/users/2?search=alb" for 127.0.0.1 at 2014-08-19 10:57:44 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"search"=>"alb", "id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered users/_author.html.erb (0.5ms)
+  [1m[35mArticle Load (0.6ms)[0m  SELECT `articles`.* FROM `articles`  WHERE (name LIKE '%alb%')
+  Rendered users/show.html.erb within layouts/application (54.6ms)
+Completed 200 OK in 62ms (Views: 59.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 10:57:44 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 10:57:44 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 10:57:44 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 10:57:44 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 10:57:44 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 10:57:44 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 10:57:44 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 10:57:44 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 10:57:44 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 10:57:44 +0530
+
+
+Started GET "/users/2?search=alb" for 127.0.0.1 at 2014-08-19 11:25:08 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"search"=>"alb", "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_author.html.erb (0.4ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE (name LIKE '%alb%')[0m
+  Rendered users/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 13ms (Views: 9.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:08 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:08 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:08 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:08 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:08 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:08 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:08 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:08 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:08 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:08 +0530
+
+
+Started GET "/users/2?utf8=%E2%9C%93&search=alb" for 127.0.0.1 at 2014-08-19 11:25:11 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"alb", "id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered users/_author.html.erb (0.4ms)
+  [1m[35mArticle Load (0.1ms)[0m  SELECT `articles`.* FROM `articles`  WHERE (name LIKE '%alb%')
+  Rendered users/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:11 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:11 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:11 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:11 +0530
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:11 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:11 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:11 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:11 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:11 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:11 +0530
+
+
+Started GET "/users/2?utf8=%E2%9C%93&search=alb" for 127.0.0.1 at 2014-08-19 11:25:30 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"alb", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_author.html.erb (0.4ms)
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE (name LIKE '%alb%')[0m
+  Rendered users/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:30 +0530
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:30 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:30 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:30 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:30 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:30 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:30 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:30 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:30 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:30 +0530
+
+
+Started GET "/users/2?search=alb" for 127.0.0.1 at 2014-08-19 11:25:30 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"search"=>"alb", "id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered users/_author.html.erb (0.3ms)
+  [1m[35mArticle Load (0.1ms)[0m  SELECT `articles`.* FROM `articles`  WHERE (name LIKE '%alb%')
+  Rendered users/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:30 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:30 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:30 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:30 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:30 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:31 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:31 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:31 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:31 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:31 +0530
+
+
+Started GET "/users/2?search=alb" for 127.0.0.1 at 2014-08-19 11:25:31 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"search"=>"alb", "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_author.html.erb (0.8ms)
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE (name LIKE '%alb%')[0m
+  Rendered users/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:31 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:31 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:31 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:31 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:31 +0530
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:31 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:31 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:31 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:31 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:31 +0530
+
+
+Started GET "/users/2?search=alb" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"search"=>"alb", "id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered users/_author.html.erb (0.4ms)
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles`  WHERE (name LIKE '%alb%')
+  Rendered users/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/users/2?search=alb" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"search"=>"alb", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_author.html.erb (0.5ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE (name LIKE '%alb%')[0m
+  Rendered users/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 11:25:32 +0530
+
+
+Started GET "/users/2/articles/3" for 127.0.0.1 at 2014-08-19 11:25:34 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"user_id"=>"2", "id"=>"3"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 3 LIMIT 1[0m  [["id", "3"]]
+  [1m[35mArticlesPublisher Load (0.1ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`article_id` = 3
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/2/all_articles" for 127.0.0.1 at 2014-08-19 11:25:36 +0530
+Processing by UsersController#display_article as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2[0m
+  [1m[35mArticlesPublisher Load (0.2ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.2ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  Rendered users/display_article.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 1.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-08-19 13:36:42 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q0bfAhLJQ8a4JY7gFdWaZkEuH7Ts+PJM6v/MWuihcGw="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-19 13:36:42 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 13:36:42 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 13:36:42 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 13:36:42 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 13:36:42 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 13:36:42 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 13:36:42 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 13:36:42 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 13:36:42 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 13:36:42 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 13:36:42 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-19 14:40:21 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-08-19 14:40:41 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZgCydqpXQ/GjraKGglLsTJtqXL0SQdyVkLbz717GyBI=", "user"=>{"email"=>"sandeshdhurve@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'sandeshdhurve@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 76ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-08-19 14:40:41 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_author.html.erb (0.3ms)
+  Rendered users/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 12ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 14:40:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 14:40:41 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 14:40:41 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 14:40:41 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 14:40:41 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 14:40:41 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 14:40:41 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 14:40:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 14:40:41 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 14:40:41 +0530
+
+
+Started GET "/users/2/all_articles" for 127.0.0.1 at 2014-08-19 14:42:07 +0530
+Processing by UsersController#display_article as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2[0m
+  [1m[35mArticlesPublisher Load (0.1ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.3ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  Rendered users/display_article.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 58ms (Views: 44.2ms | ActiveRecord: 3.7ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-08-19 14:51:44 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"V7Cgv4ZZ13pq53HA/7GQAwwToPSBjpksla2YMSOGDUs="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-19 14:51:44 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 14:51:44 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 14:51:44 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 14:51:44 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 14:51:44 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 14:51:44 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 14:51:44 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 14:51:44 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 14:51:44 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 14:51:44 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 14:51:44 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-19 14:51:45 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-08-19 14:52:04 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+fdQtbzB0NUgf9KfM0rfW2AIbf9rBpcgRWCljfJw2xE=", "user"=>{"email"=>"sandeshdhurve@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'sandeshdhurve@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 99ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-08-19 14:52:04 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_author.html.erb (0.8ms)
+  Rendered users/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 78ms (Views: 32.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 14:52:04 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 14:52:04 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 14:52:04 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 14:52:04 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 14:52:04 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 14:52:04 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 14:52:04 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 14:52:04 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 14:52:04 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 14:52:04 +0530
+
+
+Started GET "/users/2/all_articles" for 127.0.0.1 at 2014-08-19 14:52:06 +0530
+Processing by UsersController#display_article as HTML
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 2ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/models/article.rb:9:in `block in <class:Article>'
+  app/models/article.rb:14:in `get_article_object_array'
+  app/controllers/users_controller.rb:56:in `display_article'
+
+
+  Rendered /home/sdhurve/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/sdhurve/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/sdhurve/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/sdhurve/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (82.5ms)
+
+
+Started GET "/users/2/all_articles" for 127.0.0.1 at 2014-08-19 14:52:06 +0530
+Processing by UsersController#display_article as HTML
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 2ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/models/article.rb:9:in `block in <class:Article>'
+  app/models/article.rb:14:in `get_article_object_array'
+  app/controllers/users_controller.rb:56:in `display_article'
+
+
+  Rendered /home/sdhurve/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/sdhurve/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/sdhurve/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/sdhurve/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-08-19 14:53:34 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_author.html.erb (0.5ms)
+  Rendered users/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 24ms (Views: 7.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 14:53:34 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 14:53:34 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 14:53:34 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 14:53:34 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 14:53:34 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 14:53:34 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 14:53:34 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 14:53:34 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 14:53:34 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 14:53:34 +0530
+
+
+Started GET "/users/2/all_articles" for 127.0.0.1 at 2014-08-19 14:53:35 +0530
+Processing by UsersController#display_article as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2[0m
+  [1m[35mArticlesPublisher Load (0.2ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.1ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  Rendered users/display_article.html.erb within layouts/application (51.2ms)
+Completed 200 OK in 66ms (Views: 53.3ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/users/2/all_articles" for 127.0.0.1 at 2014-08-19 14:54:13 +0530
+Processing by UsersController#display_article as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2[0m
+  [1m[35mArticlesPublisher Load (0.1ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.2ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  Rendered users/display_article.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 104ms (Views: 33.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/users/2/all_articles" for 127.0.0.1 at 2014-08-19 14:55:23 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by UsersController#display_article as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2
+  [1m[36mArticlesPublisher Load (0.1ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  [1m[35mArticlesPublisher Load (0.2ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendered users/display_article.html.erb within layouts/application (57.9ms)
+Completed 200 OK in 177ms (Views: 143.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/users/2/articles/6" for 127.0.0.1 at 2014-08-19 14:55:45 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"user_id"=>"2", "id"=>"6"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1[0m  [["id", "6"]]
+  [1m[35mArticlesPublisher Load (0.4ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`article_id` = 6
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 30ms (Views: 17.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/2/all_articles" for 127.0.0.1 at 2014-08-19 14:55:47 +0530
+Processing by UsersController#display_article as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2[0m
+  [1m[35mArticlesPublisher Load (0.3ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.2ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  Rendered users/display_article.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 31ms (Views: 27.1ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-08-19 15:01:23 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JMilPUZ5ZjfApuxWnOR0d9nnuV//CTj0hI5dYMgqOAk="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 20ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-19 15:01:24 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:01:24 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:01:24 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:01:24 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:24 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:24 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:24 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:01:24 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:24 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:24 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:24 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-19 15:01:25 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-08-19 15:01:30 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JFSNCBJ8P8AYihOvchqzKVhDH0Rwo+Kiw9iC0GhTKtI=", "user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'admin@example.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 69ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-08-19 15:01:30 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_admin.html.erb (0.9ms)
+  Rendered users/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 13ms (Views: 7.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:01:30 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:01:30 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:01:30 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:30 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:01:30 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:30 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:30 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:30 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:30 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:30 +0530
+
+
+Started GET "/users/1/requested_by_author" for 127.0.0.1 at 2014-08-19 15:01:31 +0530
+Processing by UsersController#display_requests_by_author as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`author_approval` = 1  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`author_approval` = 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered users/display_requests_by_author.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 28ms (Views: 24.3ms | ActiveRecord: 3.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-08-19 15:01:33 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tYd9ms3Stuhp4x47c5rvEotofeWuYpe7BSoQlOOzkHQ="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-19 15:01:33 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:01:33 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:01:33 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:01:33 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:33 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:01:33 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:33 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:33 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:33 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:33 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:33 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-19 15:01:35 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 65ms (Views: 63.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-08-19 15:01:40 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7VeXSaN5ObzJHNlWu5n2UlGwLAWW3nJGh4WZidrbHew=", "user"=>{"email"=>"akash@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'akash@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 70ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2014-08-19 15:01:40 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered users/_publisher.html.erb (1.1ms)
+  Rendered users/show.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:01:40 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:01:40 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:01:40 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:40 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:40 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:01:40 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:40 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:40 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:40 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:01:40 +0530
+
+
+Started GET "/users/3/articles_for_publisher" for 127.0.0.1 at 2014-08-19 15:01:42 +0530
+Processing by UsersController#articles_for_publisher as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.5ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1
+  [1m[36mArticlesPublisher Load (0.2ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  Rendered users/_table_front.html.erb (0.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered users/_table_front.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  [1m[35mArticlesPublisher Load (0.5ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3 AND `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  Rendered users/_table_front.html.erb (0.1ms)
+  [1m[36mArticlesPublisher Load (0.5ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3 AND `articles_publishers`.`buy_approval` = 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered users/articles_for_publisher.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 38ms (Views: 18.0ms | ActiveRecord: 4.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-08-19 15:25:58 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0pyzxk3O03fFNXDL2NhAVD+bz+NTdKyqyymgddpC/sg="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 56ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-19 15:25:58 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:25:58 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:25:58 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:25:58 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:25:58 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:25:58 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:25:58 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:25:58 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:25:58 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:25:58 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:25:58 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-19 15:26:09 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 106ms (Views: 83.6ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-08-19 15:26:15 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q+hQgrRXRSxNYKDNPKsd01W6Z3kjzmWS6TkOnzborYg=", "user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'admin@example.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 74ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-08-19 15:26:15 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_admin.html.erb (0.8ms)
+  Rendered users/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 16ms (Views: 7.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:15 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:15 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:15 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:15 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:15 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:15 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:15 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:15 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:15 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:15 +0530
+
+
+Started GET "/users/1/requested_by_author" for 127.0.0.1 at 2014-08-19 15:26:16 +0530
+Processing by UsersController#display_requests_by_author as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`author_approval` = 1  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`author_approval` = 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered users/display_requests_by_author.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 42ms (Views: 37.5ms | ActiveRecord: 2.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-08-19 15:26:23 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pk0WNUJ8+mr9UMWC0qDckYoV7usSC9Im+MUe++OKaF0="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-19 15:26:24 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:24 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:24 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:24 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:24 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:24 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:24 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:24 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:24 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:24 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:24 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-19 15:26:25 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-08-19 15:26:31 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Lc2bNxRtenFhygE5pUDQl5zZdOSbdrLbYZVwm5eSxjI=", "user"=>{"email"=>"sandeshdhurve@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'sandeshdhurve@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 69ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-08-19 15:26:31 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered users/_author.html.erb (1.4ms)
+  Rendered users/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:31 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:31 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:31 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:31 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:32 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:32 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:32 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:32 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:32 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:32 +0530
+
+
+Started GET "/users/2/all_articles" for 127.0.0.1 at 2014-08-19 15:26:33 +0530
+Processing by UsersController#display_article as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 2
+  [1m[36mArticlesPublisher Load (0.1ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  [1m[35mArticlesPublisher Load (0.1ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendered users/display_article.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 44ms (Views: 35.2ms | ActiveRecord: 2.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-08-19 15:26:35 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7nD7ZBGDiE7M6FDqC/20weaOTkxf3QTPrQ0JRFGAXms="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-19 15:26:35 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:35 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:35 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:35 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:35 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:35 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:35 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:35 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:35 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:35 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:35 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-19 15:26:36 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-08-19 15:26:41 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MG0pka+EbACNX1+c+2QxqssXLua71CjljtlHJJRH0sE=", "user"=>{"email"=>"akash@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'akash@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 68ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2014-08-19 15:26:41 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered users/_publisher.html.erb (0.8ms)
+  Rendered users/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:41 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:41 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:41 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:41 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:41 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:41 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:41 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:41 +0530
+
+
+Started GET "/users/3/articles_for_publisher" for 127.0.0.1 at 2014-08-19 15:26:42 +0530
+Processing by UsersController#articles_for_publisher as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.3ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1
+  [1m[36mArticlesPublisher Load (0.2ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  Rendered users/_table_front.html.erb (0.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered users/_table_front.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  [1m[35mArticlesPublisher Load (0.1ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3 AND `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  Rendered users/_table_front.html.erb (0.0ms)
+  [1m[36mArticlesPublisher Load (0.1ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3 AND `articles_publishers`.`buy_approval` = 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered users/articles_for_publisher.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 30ms (Views: 20.0ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/users/3/request_to_admin_to_buy" for 127.0.0.1 at 2014-08-19 15:26:45 +0530
+Processing by UsersController#publisher_request_to_admin_to_buy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SWLTuaoY0RZC7kLuovnW730csXx6KdK3MK9SoShGz1I=", "request_to_admin_to_buy"=>{"5"=>"1"}, "commit"=>"Send to admin approval to buy", "id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 5 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `articles_publishers` (`article_id`, `buy_request`, `created_at`, `publisher_id`, `updated_at`) VALUES (5, 1, '2014-08-19 09:56:45', 3, '2014-08-19 09:56:45')
+  [1m[36m (133.2ms)[0m  [1mCOMMIT[0m
+  Rendered users/_publisher.html.erb (0.3ms)
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 151ms (Views: 9.4ms | ActiveRecord: 134.7ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:45 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:45 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:45 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:45 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:45 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:45 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:45 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:45 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:45 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:45 +0530
+
+
+Started GET "/users/3/articles_for_publisher" for 127.0.0.1 at 2014-08-19 15:26:47 +0530
+Processing by UsersController#articles_for_publisher as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.4ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1
+  [1m[36mArticlesPublisher Load (0.3ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  Rendered users/_table_front.html.erb (0.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1  [["id", 2]]
+  [1m[36mArticlesPublisher Load (0.3ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3 AND `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  Rendered users/_table_front.html.erb (0.0ms)
+  [1m[35mArticlesPublisher Load (0.3ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3 AND `articles_publishers`.`buy_approval` = 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered users/articles_for_publisher.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 19ms (Views: 11.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:47 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:47 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:47 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:47 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:47 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:47 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:47 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:47 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:47 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:47 +0530
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-08-19 15:26:49 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SWLTuaoY0RZC7kLuovnW730csXx6KdK3MK9SoShGz1I="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-19 15:26:49 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:49 +0530
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:49 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:49 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:49 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:49 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:49 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:49 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:49 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:49 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:49 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-19 15:26:50 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-08-19 15:26:55 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LbysxuEQmmJogtKMVD7SJM714QxBXslf9R4UlRD5RxE=", "user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'admin@example.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 67ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-08-19 15:26:55 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_admin.html.erb (0.4ms)
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:55 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:55 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:55 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:55 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:55 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:55 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:26:55 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:55 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:55 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:26:55 +0530
+
+
+Started GET "/users/1/requested_by_publisher" for 127.0.0.1 at 2014-08-19 15:26:58 +0530
+Processing by UsersController#display_requests_by_publisher as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticlesPublisher Load (0.5ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 0  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.4ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 0[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 5 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  Rendered users/display_requests_by_publisher.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users/1/selected_to_sell" for 127.0.0.1 at 2014-08-19 15:27:00 +0530
+Processing by UsersController#approved_for_sell as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s00jN6HtDU2VQfrIHB5mmbqyJ9VPrBhj5552JA5nQD8=", "selected_to_sell"=>{"2"=>"1"}, "commit"=>"Approved to be sold to publisher", "id"=>"1"}
+  [1m[36mArticlesPublisher Load (0.4ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (26.5ms)[0m  [1mUPDATE `articles_publishers` SET `buy_approval` = 1, `updated_at` = '2014-08-19 09:57:00' WHERE `articles_publishers`.`id` = 2[0m
+  [1m[35m (93.4ms)[0m  COMMIT
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered users/_admin.html.erb (0.3ms)
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 131ms (Views: 5.5ms | ActiveRecord: 120.7ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:00 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:00 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:00 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:00 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:00 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:00 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:00 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:00 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:00 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:00 +0530
+
+
+Started GET "/users/1/requested_by_publisher" for 127.0.0.1 at 2014-08-19 15:27:01 +0530
+Processing by UsersController#display_requests_by_publisher as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.4ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 0  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  Rendered users/display_requests_by_publisher.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:01 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:01 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:01 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:01 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:01 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:01 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:01 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:01 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:01 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:01 +0530
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-08-19 15:27:02 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"s00jN6HtDU2VQfrIHB5mmbqyJ9VPrBhj5552JA5nQD8="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-19 15:27:02 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:02 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:02 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:02 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:02 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:02 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:02 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:02 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:02 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:02 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:02 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-19 15:27:03 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-08-19 15:27:10 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"guJ34LFJ9hZEYvxLVH02k377+hG9lD8XfXvzQGfktrA=", "user"=>{"email"=>"akash@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'akash@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 69ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2014-08-19 15:27:10 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered users/_publisher.html.erb (0.3ms)
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:10 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:10 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:10 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:10 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:10 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:10 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:10 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:10 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:10 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:10 +0530
+
+
+Started GET "/users/3/articles_for_publisher" for 127.0.0.1 at 2014-08-19 15:27:11 +0530
+Processing by UsersController#articles_for_publisher as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.3ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1
+  [1m[36mArticlesPublisher Load (0.3ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  Rendered users/_table_front.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1  [["id", 2]]
+  [1m[36mArticlesPublisher Load (0.5ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3 AND `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  Rendered users/_table_front.html.erb (0.0ms)
+  [1m[35mArticlesPublisher Load (0.2ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 3 AND `articles_publishers`.`buy_approval` = 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1  [["id", 2]]
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered users/articles_for_publisher.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 25ms (Views: 16.3ms | ActiveRecord: 2.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-08-19 15:27:13 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FKRxXRIwZ3rx3pFiEohmQX17BPV3XpVerRel5qvmrVE="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-08-19 15:27:13 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:13 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:13 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:13 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:13 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:13 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:27:13 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:13 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:13 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:13 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:27:13 +0530
+
+
+Started GET "/" for 192.168.1.112 at 2014-08-19 15:31:51 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:31:51 +0530
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:31:51 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:31:51 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:31:51 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:31:51 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:31:51 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:31:51 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:31:51 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:31:51 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:31:51 +0530
+
+
+Started GET "/users/sign_in" for 192.168.1.112 at 2014-08-19 15:31:54 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 13ms (Views: 6.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/sign_up" for 192.168.1.112 at 2014-08-19 15:32:00 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 192.168.1.112 at 2014-08-19 15:32:37 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TzR74wSuaK8pfQ4GXkPN9t+QtLaLILMel0DmftZR7r8=", "user"=>{"name"=>"coolman", "email"=>"coolman@cool.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"Publisher"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `users`  WHERE `users`.`email` = BINARY 'coolman@cool.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `name`, `role`, `updated_at`) VALUES ('2014-08-19 10:02:37', 'coolman@cool.com', '$2a$10$d9Fnfew9idp3hG6YA8JA7ePY5EUr6c4BUpZBV0taKOAIr./AeurUu', 'coolman', 'Publisher', '2014-08-19 10:02:37')
+  [1m[36m (47.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://192.168.1.72:3000/users/6
+Completed 302 Found in 123ms (ActiveRecord: 48.5ms)
+
+
+Started GET "/users/6" for 192.168.1.112 at 2014-08-19 15:32:37 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered users/_publisher.html.erb (0.4ms)
+  Rendered users/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 16ms (Views: 7.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:32:37 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:32:37 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:32:37 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:32:37 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:32:37 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:32:37 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:32:37 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:32:37 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:32:37 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:32:37 +0530
+
+
+Started GET "/users/6/articles_for_publisher" for 192.168.1.112 at 2014-08-19 15:32:51 +0530
+Processing by UsersController#articles_for_publisher as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.3ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1  ORDER BY `articles`.`id` ASC LIMIT 1
+  Rendered users/_table_front.html.erb (0.1ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1  ORDER BY `articles`.`id` ASC LIMIT 1
+  Rendered users/_table_front.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  [1m[35mArticlesPublisher Load (0.5ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6 AND `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  Rendered users/articles_for_publisher.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 33ms (Views: 20.9ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/users/2/articles/5" for 192.168.1.112 at 2014-08-19 15:33:05 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"user_id"=>"2", "id"=>"5"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 5 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 5 LIMIT 1  [["id", "5"]]
+  [1m[36mArticlesPublisher Load (0.3ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`article_id` = 5[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered articles/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 16ms (Views: 7.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/2/articles/6" for 192.168.1.112 at 2014-08-19 15:33:08 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"user_id"=>"2", "id"=>"6"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1[0m  [["id", "6"]]
+  [1m[35mArticlesPublisher Load (0.4ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`article_id` = 6
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 10ms (Views: 4.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/2/articles/6" for 192.168.1.112 at 2014-08-19 15:33:19 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"user_id"=>"2", "id"=>"6"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1  [["id", "6"]]
+  [1m[36mArticlesPublisher Load (0.2ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`article_id` = 6[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered articles/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 4.7ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users/6/request_to_admin_to_buy" for 192.168.1.112 at 2014-08-19 15:34:00 +0530
+Processing by UsersController#publisher_request_to_admin_to_buy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TzR74wSuaK8pfQ4GXkPN9t+QtLaLILMel0DmftZR7r8=", "request_to_admin_to_buy"=>{"5"=>"0", "6"=>"1"}, "commit"=>"Send to admin approval to buy", "id"=>"6"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6 LIMIT 1
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `articles_publishers` (`article_id`, `buy_request`, `created_at`, `publisher_id`, `updated_at`) VALUES (6, 1, '2014-08-19 10:04:00', 6, '2014-08-19 10:04:00')
+  [1m[36m (56.6ms)[0m  [1mCOMMIT[0m
+  Rendered users/_publisher.html.erb (0.4ms)
+  Rendered users/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 75ms (Views: 9.5ms | ActiveRecord: 57.9ms)
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:34:00 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:34:00 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:34:00 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:00 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:34:00 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:00 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:00 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:00 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:00 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:00 +0530
+
+
+Started GET "/users/6/articles_for_publisher" for 192.168.1.112 at 2014-08-19 15:34:14 +0530
+Processing by UsersController#articles_for_publisher as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.4ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1
+  [1m[36mArticlesPublisher Load (0.3ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  Rendered users/_table_front.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered users/_table_front.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  [1m[35mArticlesPublisher Load (0.4ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6 AND `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  Rendered users/articles_for_publisher.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 15ms (Views: 9.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:34:14 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:34:14 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:34:14 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:34:14 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:14 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:14 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:14 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:14 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:14 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:14 +0530
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:34:40 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:34:40 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:34:40 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:40 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:34:40 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:40 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:40 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:40 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:40 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:40 +0530
+
+
+Started GET "/users/6?search=bob+marley" for 192.168.1.112 at 2014-08-19 15:34:47 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"search"=>"bob marley", "id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_publisher.html.erb (0.2ms)
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE (name LIKE '%bob marley%')[0m
+  Rendered users/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:34:47 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:34:47 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:47 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:47 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:34:47 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:47 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:34:47 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:47 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:47 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:34:47 +0530
+
+
+Started GET "/users/2/articles/6" for 192.168.1.112 at 2014-08-19 15:34:49 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"user_id"=>"2", "id"=>"6"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1[0m  [["id", "6"]]
+  [1m[35mArticlesPublisher Load (0.4ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`article_id` = 6
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 11ms (Views: 5.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/6/articles_for_publisher" for 192.168.1.112 at 2014-08-19 15:35:01 +0530
+Processing by UsersController#articles_for_publisher as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticlesPublisher Load (0.2ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1[0m
+  [1m[35mArticlesPublisher Load (0.2ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1  ORDER BY `articles`.`id` ASC LIMIT 1
+  Rendered users/_table_front.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered users/_table_front.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1  [["id", 2]]
+  [1m[36mArticlesPublisher Load (0.2ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6 AND `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  Rendered users/articles_for_publisher.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 14ms (Views: 8.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/2/articles/6" for 192.168.1.112 at 2014-08-19 15:35:07 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"user_id"=>"2", "id"=>"6"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1[0m  [["id", "6"]]
+  [1m[35mArticlesPublisher Load (0.2ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`article_id` = 6
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 3 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered articles/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 15ms (Views: 7.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/6/articles_for_publisher" for 192.168.1.112 at 2014-08-19 15:35:12 +0530
+Processing by UsersController#articles_for_publisher as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticlesPublisher Load (0.2ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1[0m
+  [1m[35mArticlesPublisher Load (0.2ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1  ORDER BY `articles`.`id` ASC LIMIT 1
+  Rendered users/_table_front.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered users/_table_front.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1  [["id", 2]]
+  [1m[36mArticlesPublisher Load (0.2ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6 AND `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  Rendered users/articles_for_publisher.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 17ms (Views: 11.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/6/articles_for_publisher" for 192.168.1.112 at 2014-08-19 15:35:20 +0530
+Processing by UsersController#articles_for_publisher as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.2ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1
+  [1m[36mArticlesPublisher Load (0.2ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  Rendered users/_table_front.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered users/_table_front.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  [1m[35mArticlesPublisher Load (0.1ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6 AND `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  Rendered users/articles_for_publisher.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 20ms (Views: 13.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/6" for 192.168.1.112 at 2014-08-19 15:37:08 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_publisher.html.erb (1.4ms)
+  Rendered users/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/6/articles_for_publisher" for 192.168.1.112 at 2014-08-19 15:37:09 +0530
+Processing by UsersController#articles_for_publisher as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticlesPublisher Load (0.2ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1[0m
+  [1m[35mArticlesPublisher Load (0.2ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1  ORDER BY `articles`.`id` ASC LIMIT 1
+  Rendered users/_table_front.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered users/_table_front.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1  [["id", 2]]
+  [1m[36mArticlesPublisher Load (0.1ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6 AND `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  Rendered users/articles_for_publisher.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 17ms (Views: 9.3ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/users/sign_out" for 192.168.1.112 at 2014-08-19 15:37:36 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TzR74wSuaK8pfQ4GXkPN9t+QtLaLILMel0DmftZR7r8="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://192.168.1.72:3000/
+Completed 302 Found in 53ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 192.168.1.112 at 2014-08-19 15:37:36 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:37:36 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:37:36 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:37:36 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:37:36 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:37:36 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:37:36 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:37:36 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:37:36 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:37:36 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:37:36 +0530
+
+
+Started GET "/users/sign_in" for 192.168.1.112 at 2014-08-19 15:37:38 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 192.168.1.112 at 2014-08-19 15:37:41 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 192.168.1.112 at 2014-08-19 15:37:56 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DDclOyHGnRa9puOwdgPXbJri/j/ONdZgf38jqKRvU4I=", "user"=>{"name"=>"coolman", "email"=>"coolman@cool.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"Author"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM `users`  WHERE `users`.`email` = BINARY 'coolman@cool.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 83ms (Views: 9.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:37:56 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:37:56 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:37:56 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:37:56 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:37:56 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:37:56 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:37:56 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:37:56 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:37:56 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:37:56 +0530
+
+
+Started POST "/users" for 192.168.1.112 at 2014-08-19 15:38:16 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DDclOyHGnRa9puOwdgPXbJri/j/ONdZgf38jqKRvU4I=", "user"=>{"name"=>"coolman1", "email"=>"coolman1@cool.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"Author"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `users`  WHERE `users`.`email` = BINARY 'coolman1@cool.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `name`, `role`, `updated_at`) VALUES ('2014-08-19 10:08:16', 'coolman1@cool.com', '$2a$10$l8RSlDCIhxLG6MM.yy.eD.XhlLoCJzl44U0CJi1GB6lmdcLtkJe0W', 'coolman1', 'Author', '2014-08-19 10:08:16')
+  [1m[36m (53.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://192.168.1.72:3000/users/7
+Completed 302 Found in 124ms (ActiveRecord: 54.6ms)
+
+
+Started GET "/users/7" for 192.168.1.112 at 2014-08-19 15:38:16 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 7 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 7  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered users/_author.html.erb (0.5ms)
+  Rendered users/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:38:16 +0530
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:38:16 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:38:16 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:38:16 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:16 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:16 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:16 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:16 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:16 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:16 +0530
+
+
+Started GET "/users/7/articles/new" for 192.168.1.112 at 2014-08-19 15:38:23 +0530
+Processing by ArticlesController#new as HTML
+  Parameters: {"user_id"=>"7"}
+  Rendered articles/_form.html.erb (22.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 7  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered articles/new.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/7/articles" for 192.168.1.112 at 2014-08-19 15:38:43 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DDclOyHGnRa9puOwdgPXbJri/j/ONdZgf38jqKRvU4I=", "articles"=>{"name"=>"Hello!", "content"=>"Hey man! How are you doing these days? Go to your home and enjoy."}, "commit"=>"Submit", "user_id"=>"7"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 7 LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `users`  WHERE (`users`.`email` = BINARY 'coolman1@cool.com' AND `users`.`id` != 7) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `articles` (`content`, `created_at`, `name`, `updated_at`, `user_id`) VALUES ('Hey man! How are you doing these days? Go to your home and enjoy.', '2014-08-19 10:08:43', 'Hello!', '2014-08-19 10:08:43', 7)
+  [1m[36m (40.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 7  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://192.168.1.72:3000/users/7
+Completed 302 Found in 52ms (ActiveRecord: 42.3ms)
+
+
+Started GET "/users/7" for 192.168.1.112 at 2014-08-19 15:38:44 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 7  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_author.html.erb (0.5ms)
+  Rendered users/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:38:44 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:44 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:44 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:38:44 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:38:44 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:38:44 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:44 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:44 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:44 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:44 +0530
+
+
+Started GET "/users/7/all_articles" for 192.168.1.112 at 2014-08-19 15:38:46 +0530
+Processing by UsersController#display_article as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 7  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 7  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`user_id` = 7[0m
+  [1m[35mArticlesPublisher Load (0.3ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.3ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 1[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mArticle Load (0.3ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 5 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered users/display_article.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/users/7/request_to_admin" for 192.168.1.112 at 2014-08-19 15:38:52 +0530
+Processing by UsersController#admin_to_approve as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DDclOyHGnRa9puOwdgPXbJri/j/ONdZgf38jqKRvU4I=", "request_to_admin"=>{"10"=>"1"}, "commit"=>"Send to admin approval", "id"=>"7"}
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 10 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `articles` SET `author_approval` = 1, `updated_at` = '2014-08-19 10:08:52' WHERE `articles`.`id` = 10
+  [1m[36m (53.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 7  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_author.html.erb (0.3ms)
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 64ms (Views: 6.8ms | ActiveRecord: 54.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:38:52 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:38:52 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:38:52 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:38:52 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:52 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:52 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:52 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:52 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:52 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:52 +0530
+
+
+Started DELETE "/users/sign_out" for 192.168.1.112 at 2014-08-19 15:38:56 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DDclOyHGnRa9puOwdgPXbJri/j/ONdZgf38jqKRvU4I="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 7  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://192.168.1.72:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 192.168.1.112 at 2014-08-19 15:38:56 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:38:56 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:56 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:38:56 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:38:56 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:56 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:38:56 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:56 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:56 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:56 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:38:56 +0530
+
+
+Started GET "/users/sign_in" for 192.168.1.112 at 2014-08-19 15:38:57 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 192.168.1.112 at 2014-08-19 15:39:19 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qPmRb3ptl1yCBKbf5dhbgux/B+kXw6RFnoVH9+RpCvo=", "user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'admin@example.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://192.168.1.72:3000/users/1
+Completed 302 Found in 71ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for 192.168.1.112 at 2014-08-19 15:39:19 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_admin.html.erb (0.5ms)
+  Rendered users/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:19 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:19 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:19 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:19 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:19 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:19 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:19 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:19 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:19 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:19 +0530
+
+
+Started GET "/users/1/requested_by_author" for 192.168.1.112 at 2014-08-19 15:39:21 +0530
+Processing by UsersController#display_requests_by_author as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.4ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`author_approval` = 1  ORDER BY `articles`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`author_approval` = 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 7 LIMIT 1
+  Rendered users/display_requests_by_author.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/users/1/selected_for_publishing" for 192.168.1.112 at 2014-08-19 15:39:25 +0530
+Processing by UsersController#approve_for_publishing as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V0e2a08zCSBi6rxPLr7LxqDThTJpjO4DrqCNYqE7at0=", "selected_for_publishing"=>{"10"=>"1"}, "commit"=>"Approved to be published", "id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 10 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `articles` SET `admin_approval` = 1, `updated_at` = '2014-08-19 10:09:25' WHERE `articles`.`id` = 10[0m
+  [1m[35m (47.9ms)[0m  COMMIT
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered users/_admin.html.erb (0.6ms)
+  Rendered users/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 64ms (Views: 11.4ms | ActiveRecord: 49.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:25 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:25 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:25 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:25 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:25 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:25 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:25 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:25 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:25 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:25 +0530
+
+
+Started GET "/users/1/requested_by_publisher" for 192.168.1.112 at 2014-08-19 15:39:27 +0530
+Processing by UsersController#display_requests_by_publisher as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.4ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 0  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  [1m[35mArticlesPublisher Load (0.3ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 0
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6 LIMIT 1[0m
+  Rendered users/display_requests_by_publisher.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 64ms (Views: 60.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:27 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:27 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:27 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:27 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:27 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:27 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:27 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:27 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:27 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:27 +0530
+
+
+Started POST "/users/1/selected_to_sell" for 192.168.1.112 at 2014-08-19 15:39:29 +0530
+Processing by UsersController#approved_for_sell as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V0e2a08zCSBi6rxPLr7LxqDThTJpjO4DrqCNYqE7at0=", "selected_to_sell"=>{"3"=>"1"}, "commit"=>"Approved to be sold to publisher", "id"=>"1"}
+  [1m[35mArticlesPublisher Load (0.4ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`id` = 3 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `articles_publishers` SET `buy_approval` = 1, `updated_at` = '2014-08-19 10:09:29' WHERE `articles_publishers`.`id` = 3
+  [1m[36m (36.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_admin.html.erb (0.3ms)
+  Rendered users/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 47ms (Views: 5.7ms | ActiveRecord: 37.4ms)
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:29 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:29 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:29 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:29 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:29 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:29 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:29 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:29 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:29 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:29 +0530
+
+
+Started GET "/users/1/requested_by_publisher" for 192.168.1.112 at 2014-08-19 15:39:33 +0530
+Processing by UsersController#display_requests_by_publisher as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticlesPublisher Load (0.4ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`buy_approval` = 0  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  Rendered users/display_requests_by_publisher.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:33 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:33 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:33 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:33 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:33 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:33 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:33 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:33 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:33 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:33 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:35 +0530
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:35 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:35 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:35 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:35 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:35 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:35 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:35 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:35 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:35 +0530
+
+
+Started DELETE "/users/sign_out" for 192.168.1.112 at 2014-08-19 15:39:41 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"V0e2a08zCSBi6rxPLr7LxqDThTJpjO4DrqCNYqE7at0="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://192.168.1.72:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 192.168.1.112 at 2014-08-19 15:39:41 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:41 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:41 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:41 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:41 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:41 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:41 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:41 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:41 +0530
+
+
+Started GET "/users/sign_in" for 192.168.1.112 at 2014-08-19 15:39:42 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 192.168.1.112 at 2014-08-19 15:39:44 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AehusUv/kFdK5FSeuIFQZqUdAY/K5aXbBtgK/R+vEGo=", "user"=>{"email"=>"coolman@cool.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AehusUv/kFdK5FSeuIFQZqUdAY/K5aXbBtgK/R+vEGo=", "user"=>{"email"=>"coolman@cool.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:44 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:44 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:44 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:44 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:44 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:44 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:44 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:44 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:44 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:44 +0530
+
+
+Started POST "/users/sign_in" for 192.168.1.112 at 2014-08-19 15:39:47 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AehusUv/kFdK5FSeuIFQZqUdAY/K5aXbBtgK/R+vEGo=", "user"=>{"email"=>"coolman@cool.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'coolman@cool.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://192.168.1.72:3000/users/6
+Completed 302 Found in 68ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/6" for 192.168.1.112 at 2014-08-19 15:39:47 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_publisher.html.erb (0.3ms)
+  Rendered users/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:48 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:48 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:48 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:39:48 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:48 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:48 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:48 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:48 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:48 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:39:48 +0530
+
+
+Started GET "/users/6/articles_for_publisher" for 192.168.1.112 at 2014-08-19 15:39:51 +0530
+Processing by UsersController#articles_for_publisher as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mArticlesPublisher Load (0.4ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1[0m
+  [1m[35mArticlesPublisher Load (0.3ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1  ORDER BY `articles`.`id` ASC LIMIT 1[0m
+  Rendered users/_table_front.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 7 LIMIT 1[0m
+  Rendered users/_table_front.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 7 LIMIT 1[0m  [["id", 7]]
+  [1m[35mArticlesPublisher Load (0.4ms)[0m  SELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6 AND `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1
+  Rendered users/_table_front.html.erb (0.1ms)
+  [1m[36mArticlesPublisher Load (0.3ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6 AND `articles_publishers`.`buy_approval` = 1[0m
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  Rendered users/articles_for_publisher.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 31ms (Views: 22.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/6/articles_for_publisher" for 192.168.1.112 at 2014-08-19 15:42:46 +0530
+Processing by UsersController#articles_for_publisher as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mArticlesPublisher Load (0.2ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1
+  [1m[36mArticlesPublisher Load (0.2ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6[0m
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1  ORDER BY `articles`.`id` ASC LIMIT 1
+  Rendered users/_table_front.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `articles`.* FROM `articles`  WHERE `articles`.`admin_approval` = 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 7 LIMIT 1
+  Rendered users/_table_front.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 7 LIMIT 1  [["id", 7]]
+  [1m[36mArticlesPublisher Load (0.1ms)[0m  [1mSELECT  `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6 AND `articles_publishers`.`buy_approval` = 1  ORDER BY `articles_publishers`.`id` ASC LIMIT 1[0m
+  Rendered users/_table_front.html.erb (0.0ms)
+  [1m[35mArticlesPublisher Load (0.1ms)[0m  SELECT `articles_publishers`.* FROM `articles_publishers`  WHERE `articles_publishers`.`publisher_id` = 6 AND `articles_publishers`.`buy_approval` = 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  `articles`.* FROM `articles`  WHERE `articles`.`id` = 6 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1  [["id", 2]]
+  Rendered users/articles_for_publisher.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 19ms (Views: 11.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:42:46 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:42:46 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:42:46 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:42:46 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:42:46 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:42:46 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:42:46 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:42:46 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:42:46 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:42:46 +0530
+
+
+Started GET "/users/6" for 192.168.1.112 at 2014-08-19 15:42:51 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_publisher.html.erb (0.3ms)
+  Rendered users/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-08-19 15:44:12 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 192.168.1.112 at 2014-08-19 15:44:28 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hOrHGPExLHJknBc+osOOQHBMpSsVslWI3FYGTtAfuME="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 6  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://192.168.1.72:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 192.168.1.112 at 2014-08-19 15:44:28 +0530
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.1.112 at 2014-08-19 15:44:28 +0530
+
+
+Started GET "/assets/articles.css?body=1" for 192.168.1.112 at 2014-08-19 15:44:28 +0530
+
+
+Started GET "/assets/users.css?body=1" for 192.168.1.112 at 2014-08-19 15:44:28 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.1.112 at 2014-08-19 15:44:28 +0530
+
+
+Started GET "/assets/application.css?body=1" for 192.168.1.112 at 2014-08-19 15:44:28 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.112 at 2014-08-19 15:44:28 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.1.112 at 2014-08-19 15:44:28 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 192.168.1.112 at 2014-08-19 15:44:28 +0530
+
+
+Started GET "/assets/users.js?body=1" for 192.168.1.112 at 2014-08-19 15:44:28 +0530
+
+
+Started GET "/assets/application.js?body=1" for 192.168.1.112 at 2014-08-19 15:44:28 +0530
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-08-19 15:53:12 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LW3moVh8sG0UC4lMP5KFki0aalVXwhllAlZNeBDASOA=", "user"=>{"email"=>"sandeshdhurve@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'sandeshdhurve@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 75ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-08-19 15:53:12 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered users/_author.html.erb (0.4ms)
+  Rendered users/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 11ms (Views: 6.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:53:12 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:53:12 +0530
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:53:12 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:53:12 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:53:12 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:53:12 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:53:12 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:53:12 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:53:12 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:53:12 +0530
+
+
+Started GET "/users/2/articles/new" for 127.0.0.1 at 2014-08-19 15:53:14 +0530
+Processing by ArticlesController#new as HTML
+  Parameters: {"user_id"=>"2"}
+  Rendered articles/_form.html.erb (1.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered articles/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 13ms (Views: 8.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/users/2/articles" for 127.0.0.1 at 2014-08-19 15:54:14 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zSxxgLkSorcMi3/qE60SHIj35W6fGxDxQXUBVDrIDlo=", "articles"=>{"name"=>"life", "content"=>"You cannot change what you refuse to confront."}, "commit"=>"Submit", "user_id"=>"2"}
+
+
+Started POST "/users/2/articles" for 127.0.0.1 at 2014-08-19 15:57:16 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zSxxgLkSorcMi3/qE60SHIj35W6fGxDxQXUBVDrIDlo=", "articles"=>{"name"=>"life", "content"=>"You cannot change what you refuse to confront."}, "commit"=>"Submit", "user_id"=>"2"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM `users`  WHERE (`users`.`email` = BINARY 'sandeshdhurve@gmail.com' AND `users`.`id` != 2) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `articles` (`content`, `created_at`, `name`, `updated_at`, `user_id`) VALUES ('You cannot change what you refuse to confront.', '2014-08-19 10:28:47', 'life', '2014-08-19 10:28:47', 2)[0m
+  [1m[35m (36.6ms)[0m  COMMIT
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 91184ms (ActiveRecord: 41.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2014-08-19 15:58:47 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 2  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered users/_author.html.erb (0.9ms)
+  Rendered users/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 97ms (Views: 94.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-08-19 15:58:48 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-08-19 15:58:48 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-08-19 15:58:48 +0530
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-08-19 15:58:48 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-19 15:58:48 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-19 15:58:48 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-08-19 15:58:48 +0530
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-08-19 15:58:48 +0530
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-08-19 15:58:48 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-08-19 15:58:48 +0530
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `users`
