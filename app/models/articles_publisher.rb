@@ -15,21 +15,21 @@ class ArticlesPublisher < ActiveRecord::Base
   	find(article).update_attribute('buy_approval', true)
 	end
 
-	def self.get_list_of_published_articles
-    buy_approval_true
-  end
+	#def self.get_list_of_published_articles
+  #  buy_approval_true
+  #end
 
-	def self.get_buy_approval
-    buy_approval_false
-	end  
+	#def self.get_buy_approval
+  #  buy_approval_false
+	#end  
 
   def self.get_if_exist(user)
     publisher(user).first!=nil
   end
 
-  def self.get_all_where_publisher(user)
-   publisher(user)
-  end
+  #def self.get_all_where_publisher(user)
+  # publisher(user)
+  #end
 
   def self.get_where_publisher_and_buy_approval(user)
     publisher(user).buy_approval_true

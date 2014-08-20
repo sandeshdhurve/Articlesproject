@@ -5,7 +5,7 @@
   <%if @article.first==nil%>
     No requests
   <%else%>
-    <table>
+    <table class="table table-hover table-bordered table-condensed">
       <tr>
         <th>Title</th>
         <th>Author</th>
@@ -14,7 +14,7 @@
 
       <% @article.each do |t| %>
         <tr>
-          <td><%= link_to t.name, user_article_path(id: t.id, user_id: t.user_id) %></td>
+          <td><%= link_to t.name, user_article_path(id: t.id, user_id: t.user_id), :class => "btn btn-link btn-sm" %></td>
           <td><%= t.user.name %></td>
           <%if t.admin_approval!=true%>
           <td><%= check_box('selected_for_publishing', t.id) %></td>
@@ -24,9 +24,9 @@
       <% end %>    
     <% end %>
   </table>
-  <%= submit_tag 'Approved to be published' %>
-<%end%>
+  <%= submit_tag 'Approved to be published', :class => "btn btn-success btn-sm" %>
+<p><%end%></p>
 
-<p><%= link_to 'Back', user_path(current_user) %></p>
+<p><%= link_to 'Back', user_path(current_user), :class => "btn btn-info btn-sm" %>
   
-<p><%= link_to 'Sign out', destroy_user_session_path, method: :delete%><p>
+<%= link_to 'Sign out', destroy_user_session_path, method: :delete, :class => "btn btn-default btn-sm"%></p>

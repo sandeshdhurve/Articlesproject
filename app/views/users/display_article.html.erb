@@ -1,56 +1,53 @@
-<h1>Author: <%= current_user.name %></h1>
+<h2>Author: <%= current_user.name %> <%= link_to 'Sign out', destroy_user_session_path, method: :delete, :class => "btn btn-default btn-sm"%></h2>
 <h3>Articles that <%= current_user.name %> has authored:</h3>
 
 
 <%if @arr_objects.first==nil %>
-<p>Currently no atricle. Add <%= link_to 'Here', new_user_article_path(current_user)%></p>
+  <p>Currently no atricle. Add <%= link_to 'Here', new_user_article_path(current_user)%></p>
 <%else%>
-<%= form_tag 'request_to_admin' %>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Remarks</th>
-  </tr>
-  <% @arr_objects.each do |t| %>
+  <%= form_tag 'request_to_admin' %>
+
+  <table class="table table-hover table-bordered table-condensed">
     <tr>
-      <td><%= link_to t.name, user_article_path(id: t.id, user_id: t.user_id) %></td>
-      <%if t.author_approval!=true %>
-      <td><%= check_box("request_to_admin", t.id) %></td>
-      <td><%= link_to 'Delete', user_article_path(id: t.id, user_id: t.user_id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      <%else%>
-      <td> </td>
-      <% end %>
+      <th>Title</th>
+      <th>Select</th> 
+      <th>Delete</th>
     </tr>
-  <% end %>
-</table>
-<%= submit_tag 'Send to admin approval' %>
-<%end%>
-<p><%= link_to 'Back', user_path(current_user) %></p>
+    <% @arr_objects.each do |t| %>
+      <tr>
+        <td><%= link_to t.name, user_article_path(id: t.id, user_id: t.user_id), :class => "btn btn-link btn-sm" %></td>
+        <%if t.author_approval!=true %>
+        <td><%= check_box("request_to_admin", t.id) %></td>
+        <td><%= link_to 'Delete', user_article_path(id: t.id, user_id: t.user_id), method: :delete, data: { confirm: 'Are you sure?' },:class => "btn btn-default btn-sm"  %></td>
+        <%else%>  
+        <td> </td>
+        <td><%= link_to 'Delete', user_article_path(id: t.id, user_id: t.user_id), method: :delete,:class => "btn btn-default btn-sm", :disabled=>"disabled" %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </table>
+<%= submit_tag 'Send to admin approval', :class => "btn btn-success btn-sm" %>
+<p><%end%></p>
+<%= link_to 'Back', user_path(current_user), :class => "btn btn-info btn-sm" %>
 
 
 <h3>List all the articles got published</h3>
-
 <% if @articles_published.first==nil%>
 <p>No article been purchased yet!!!</p>
 <%else%>
-<table>
+<table class="table table-hover table-bordered table-condensed table-condensed">
   <tr>
     <th>Title</th>
     <th>Publisher</th>
   </tr>
   <% @articles_published.each do |t| %>
-    <%if t.article.user==current_user%>
+    
     <tr>
-      <td><%= link_to t.article.name, user_article_path(id: t.article_id, user_id: t.article.user_id) %></td>
+      <td><%= link_to t.article.name, user_article_path(id: t.article_id, user_id: t.article.user_id), :class => "btn btn-link btn-sm"%></td>
       <td><%= t.publisher.name%></td>
     </tr>
-  <% end %>  
   <% end %>
 </table>
 <%end%>
 
-
-
-
-<p><%= link_to 'Sign out', destroy_user_session_path, method: :delete%><p>

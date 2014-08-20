@@ -53,26 +53,32 @@
   end
 
   def display_article
-   @arr_objects=Article.get_article_object_array(params[:id])
-   @articles_published= ArticlesPublisher.get_list_of_published_articles
+   @arr_objects=current_user.articles  #Article.user(params[:id])       #get_article_object_array(params[:id])
+   #debugger
+   @articles_published= ArticlesPublisher.buy_approval_true       #get_list_of_published_articles
+    # @articles_published=[]
+    # current_user.articles.each do |g|
+    #   @articles_published<<g.articles_publishers.buy_approval_true
+    # end
+
   end 
 
   def display_requests_by_author
-    @article=Article.get_requests_of_author
+    @article=Article.author_approval        #get_requests_of_author
   end
 
   def display_requests_by_publisher
-    @article_from_publisher= ArticlesPublisher.get_buy_approval
+    @article_from_publisher= ArticlesPublisher.buy_approval_false       #get_buy_approval
   end
 
   def articles_for_publisher
-    @all_published=Article.get_articles_to_be_published
+    @all_published=Article.admin_approval       #get_articles_to_be_published
 
     if ArticlesPublisher.get_if_exist(current_user.id)
       @article_for_publisher=[] 
-      Article.get_articles_to_be_published.each do |aobject|
+      Article.admin_approval.each do |aobject|          #get_articles_to_be_published
         @condition= false
-        ArticlesPublisher.get_all_where_publisher(current_user.id).each do |apobject|
+        ArticlesPublisher.publisher(current_user.id).each do |apobject|       #get_all_where_publisher
           if aobject.id==apobject.article_id
             @condition= true
             break
@@ -85,9 +91,9 @@
         end
       end
     else
-      @article_for_publisher=Article.get_articles_to_be_published
+      @article_for_publisher=Article.admin_approval       #get_articles_to_be_published
     end
-    @articles_purchased= ArticlesPublisher.get_where_publisher_and_buy_approval(current_user.id)
+    @articles_purchased= ArticlesPublisher.publisher(current_user.id).buy_approval_true       #get_where_publisher_and_buy_approval(current_user.id)
   end  
   
   

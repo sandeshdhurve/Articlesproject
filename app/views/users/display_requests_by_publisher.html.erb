@@ -5,7 +5,7 @@
 <%if @article_from_publisher.first==nil%>
 No requests from publisher for buying
 <%else%>
-<table>
+<table class="table table-hover table-bordered table-condensed">
   <tr>
     <th>Title</th>
     <th>Author</th>
@@ -15,7 +15,7 @@ No requests from publisher for buying
 
   <% @article_from_publisher.each do |t| %>
     <tr>
-        <td><%= link_to t.article.name, user_article_path(id: t.article.id, user_id: t.article.user_id ) %></td>
+        <td><%= link_to t.article.name, user_article_path(id: t.article.id, user_id: t.article.user_id ), :class => "btn btn-link btn-sm" %></td>
         <td><%= t.article.user.name %></td>
         <td><%= t.publisher.name %></td>
       <%if t.buy_approval!=true%>
@@ -29,7 +29,7 @@ No requests from publisher for buying
 <%= submit_tag 'Approved to be sold to publisher' %>
 <%end%>
 
-<p><%= link_to 'Back', user_path(current_user) %></p>
+<p><%= link_to 'Back', user_path(current_user), :class => "btn btn-info btn-sm" %></p>
 
 
-<p><%= link_to 'Sign out', destroy_user_session_path, method: :delete%><p>
+<p><%= link_to 'Sign out', destroy_user_session_path, method: :delete, :class => "btn btn-default btn-sm"%><p>

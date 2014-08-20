@@ -15,15 +15,15 @@
 
 <%if @list_of_requested.first!=nil%>
   List of publishers whose request is pending for "<%= @article.name %>": 
-  <table>
+  <table class="table table-hover table-bordered table-condensed">
     <tr>
       <th>Name</th>
       <th>Email</th>
     </tr>
-  <p><% @list_of_requested.each do |publisher| %></p>
+  <p><% @list_of_requested.each do |t| %></p>
     <tr>
-     <p><td><%= publisher.name%></td> 
-     <td><%= publisher.email%></td></p>
+     <p><td><%= t.publisher.name%></td> 
+     <td><%= t.publisher.email%></td></p>
     </tr>
      <p><%end %></p>
 </table>
@@ -39,22 +39,22 @@
       <th>Name</th>
       <th>Email</th>
     </tr>
-    <p><% @list_of_publisher.each do |publisher| %></p>
+    <p><% @list_of_publisher.each do |t| %></p>
     <tr>
-     <p><td><%= publisher.name%></td> 
-     <td><%= publisher.email%></td></p>
+     <p><td><%= t.publisher.name%></td> 
+     <td><%= t.publisher.email%></td></p>
     </tr>
      <p><%end %></p>
   </table>
-<% end %>
+<p><% end %></p>
 
 
 <%if current_user.role == "Author"%>
-  <%= link_to 'Back', display_user_article_path(current_user) %>
+  <%= link_to 'Back', display_user_article_path(current_user), :class => "btn btn-info btn-sm" %>
 
 <%elsif current_user.role == "Admin"%>
-  <%= link_to 'Back', user_path(current_user) %>
+  <%= link_to 'Back', user_path(current_user), :class => "btn btn-info btn-sm" %>
 
 <%elsif current_user.role == "Publisher"%>
-  <%= link_to 'Back', display_available_for_publisher_path(current_user) %>
+  <%= link_to 'Back', display_available_for_publisher_path(current_user), :class => "btn btn-info btn-sm" %>
 <%end%>

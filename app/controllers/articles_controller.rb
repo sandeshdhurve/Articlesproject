@@ -9,15 +9,8 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   def show
     @article= Article.find(params[:id])
-    @list_of_publisher=[] 
-    @list_of_requested=[]
-    ArticlesPublisher.where(article_id: params[:id]).each do |obj|
-      if obj.buy_approval==true
-        @list_of_publisher<< User.find(obj.publisher)
-      else
-        @list_of_requested<< User.find(obj.list_of_publisherlisher)
-      end
-    end
+    @list_of_publisher=@article.articles_publishers.buy_approval_true
+    @list_of_requested=@article.articles_publishers.buy_approval_false
   end
 
   # GET /articles/new
@@ -33,9 +26,7 @@ class ArticlesController < ApplicationController
   # POST /articles
   # POST /articles.json
   def create
-    @article = Article.new(article_params)
-    @article.user_id= params[:user_id].to_i 
-
+    @article = current_user.articles.build(article_params)
     if @article.save!
       redirect_to user_path(current_user) 
     else
