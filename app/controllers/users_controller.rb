@@ -53,33 +53,31 @@
   end
 
   def display_article
-   @arr_objects=current_user.articles  #Article.user(params[:id])       #get_article_object_array(params[:id])
-   #debugger
-   @articles_published= ArticlesPublisher.buy_approval_true       #get_list_of_published_articles
-    # @articles_published=[]
-    # current_user.articles.each do |g|
-    #   @articles_published<<g.articles_publishers.buy_approval_true
-    # end
-
+    @arr_objects=current_user.articles  
+    @articles_published=[]
+    current_user.articles.each do |g|
+      if g.articles_publishers.buy_approval_true.first!=nil
+        @articles_published<<g.articles_publishers.buy_approval_true
+      end
+    end
   end 
 
   def display_requests_by_author
-    @article=Article.author_approval        #get_requests_of_author
+    @article=Article.author_approval      
   end
 
   def display_requests_by_publisher
-    @article_from_publisher= ArticlesPublisher.buy_approval_false       #get_buy_approval
+    @article_from_publisher= ArticlesPublisher.buy_approval_false      
   end
 
   def articles_for_publisher
-    @all_published=Article.admin_approval       #get_articles_to_be_published
-
-    if ArticlesPublisher.get_if_exist(current_user.id)
+    @all_published=Article.admin_approval
+    if current_user.articles_publishers.first!=nil
       @article_for_publisher=[] 
-      Article.admin_approval.each do |aobject|          #get_articles_to_be_published
+      Article.admin_approval.each do |a|
         @condition= false
-        ArticlesPublisher.publisher(current_user.id).each do |apobject|       #get_all_where_publisher
-          if aobject.id==apobject.article_id
+        current_user.articles_publishers.each do |b|
+          if a.id==b.article_id
             @condition= true
             break
           else
@@ -87,13 +85,13 @@
           end
         end
         if @condition== false
-          @article_for_publisher << aobject
+          @article_for_publisher << a
         end
       end
     else
-      @article_for_publisher=Article.admin_approval       #get_articles_to_be_published
+      @article_for_publisher=Article.admin_approval       
     end
-    @articles_purchased= ArticlesPublisher.publisher(current_user.id).buy_approval_true       #get_where_publisher_and_buy_approval(current_user.id)
+    @articles_purchased= current_user.articles_publishers.buy_approval_true    
   end  
   
   
@@ -105,15 +103,20 @@
   end
 
   def approve_for_publishing
-    selected_for_publishing.each do |article|
-      Article.admin_approve_for_publishing(article.to_i)
+    if selected_for_publishing.nil?
+      display_requests_by_author
+      render 'display_requests_by_author'
+    else
+      selected_for_publishing.each do |article|
+        Article.admin_approve_for_publishing(article.to_i)
+      end
+      render 'show'
     end
-    render 'show'
   end
 
   def publisher_request_to_admin_to_buy
     request_to_admin_to_buy.each do |article|
-      ArticlesPublisher.create(article_id: article, publisher_id: current_user.id, buy_request: true)
+      current_user.articles_publishers.create(article_id: article, buy_request: true)
     end
     render 'show'
   end
@@ -152,12 +155,12 @@
   end
 
   private
-  # Use callbacks to share common setup or constraints between actions.
+  
   def set_user
     @user = User.find(params[:id])
   end
 
-  # Never trust parameters from the scary internet, only allow the white list through.
+  
   def user_params
     params.require(:user).permit(:name, :role)
   end

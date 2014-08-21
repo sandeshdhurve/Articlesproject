@@ -33,21 +33,28 @@
 
 
 <h3>List all the articles got published</h3>
-<% if @articles_published.first==nil%>
+<% if @articles_published.first.first==nil%>
 <p>No article been purchased yet!!!</p>
 <%else%>
-<table class="table table-hover table-bordered table-condensed table-condensed">
+<table class="table table-bordered table-condensed">
   <tr>
     <th>Title</th>
-    <th>Publisher</th>
+    <th>Publishers</th>
   </tr>
   <% @articles_published.each do |t| %>
-    
     <tr>
-      <td><%= link_to t.article.name, user_article_path(id: t.article_id, user_id: t.article.user_id), :class => "btn btn-link btn-sm"%></td>
-      <td><%= t.publisher.name%></td>
+      <td><%= link_to t.first.article.name, user_article_path(id: t.first.article_id, user_id: t.first.article.user_id), :class => "btn btn-link btn-sm"%></td>
+      <td>
+        <% t.each do |n| %>
+         <% if n== t.last%>
+            <%= n.publisher.name %> 
+          <% else %>
+           <%= n.publisher.name %>,
+          <% end%> 
+        <% end%> 
+      </td>
     </tr>
-  <% end %>
+  <%-end %>
 </table>
-<%end%>
+<%-end%>
 

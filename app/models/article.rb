@@ -1,6 +1,7 @@
 class Article < ActiveRecord::Base
   belongs_to :user
   has_many :articles_publishers
+  has_many :articles, through: :articles_publishers
   validates :name, presence: true, length: { minimum: 2 }, length: { maximum: 50 }
   validates :content, presence: true, length: { minimum: 2 }, length: { maximum: 500 }
   validates :author_approval,  default: false
